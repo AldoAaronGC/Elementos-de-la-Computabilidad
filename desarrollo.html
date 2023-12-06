@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es" style="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="Author" content="Equipo 4"><!--Autor-->
+	<script src="media/js/jq.js" type="text/javascript"></script>
+	<script src="media/js/m.js" type="text/javascript"></script>
+	<script src="media/js/ui.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="media/css/ui.css" type="text/css">
+	<link rel="stylesheet" href="media/css/portada.css" type="text/css">
+
+</head>
+
+<body style="">
+	<br><br><br>
+	<h2>Desarrollo</h2> <br>
+	<h3>3.1 Teoria de la computabilidad</h3>
+	<h5>
+		Es un campo de la informática y las matemáticas que se centra en entender qué problemas pueden ser resueltos por computadoras y cómo pueden ser resueltos. 
+		Explora conceptos como máquinas abstractas, algoritmos y la noción de computabilidad para determinar los límites y posibilidades de lo que puede
+		ser calculado. La cual resuelve las siguientes preguntas:
+		<br><br>
+	</h5>
+
+	<h5>
+		-¿Qué problemas pueden ser resueltos por una computadora? 
+		-¿Cuales no pueden ser resueltos? <br>
+		-¿Cuales no pueden ser resueltos? <br>
+		-El límite entre estas dos preguntas <br>
+		<br>
+	</h5>
+	<h3 align="center">
+	<br>
+	3.1.1 ¿Qué es computable? <br>
+	</h3>
+
+	<h5>
+		Algo es considerado computable si existe un procedimiento o algoritmo que pueda calcularlo de manera precisa y efectiva. Un problema o función es computable
+		si se puede resolver utilizando un algoritmo, es decir, si existe un método sistemático que puede producir la respuesta correcta para cualquier entrada válida
+		en un tiempo finito.
+		La noción de computabilidad está relacionada con la capacidad de resolver problemas utilizando un modelo de computación dado, como la máquina de Turing o el
+		modelo lambda, y determina qué problemas pueden ser resueltos por estos modelos mediante algoritmos efectivos. Algunos problemas son computables, lo que 
+		significa que existe un algoritmo que puede resolverlos, mientras que otros son no computables, lo que implica que no hay un algoritmo que pueda resolverlos 
+		en todos los casos.
+		<br><br>
+	</h5>
+
+	<h3 align="center">
+		<br>
+	3.1.2 ¿Qué es la teoría de la computabilidad? <br>
+	</h3>
+		
+	<h5>
+		Rama en la ciencia de la computación que se enfoca en entender los límites y posibilidades de la computación. Ll cual responde a las siguientes preguntas:
+			- ¿Qué problemas pueden ser resueltos por una computadora? 
+			- ¿Cuáles no pueden ser resueltos?
+			- El límite entre estas dos preguntas
+			<br><br>
+	</h5>
+
+	<h3 align="center">
+		<br>
+	3.1.3 Historia y Maquina de Turing <br>
+	</h3>
+	<h5>
+		Los ordenadores son capaces de hacer cosas increíbles desde simular sistemas cuánticos hasta reproducir películas en Netflix y es que la informática tiene una
+		historia larga desde las máquinas de calcular de pascal o leibniz pasando por el analytical engine de babbage, hasta los más modernos y caros smartphones.
+		Primero hubo artefactos que mecanizan el cálculo y ahí se pasó a máquinas programables y de ahí al concepto que revolucionó la historia el computador de programa 
+		almacenado es decir que en la memoria no sólo se guardan datos sino los propios programas que ejecutan el caso es que en aquel momento hubo 2 nombres que merecen 
+		seguramente pasará a la historia como los padres de la informática tal y como la conocemos hoy en día uno es John Von Newmann creador junto con Eckert y Mauchly de la 
+		hoy conocida como arquitectura de von neumann que es la que tienen los ordenadores actuales vamos una cpu una memoria central y unos dispositivos de entrada 
+		salida esa arquitectura en los años 40 del siglo 20 implementaba la idea que revolucionó el mundo.
+			<br><br>
+			Arquitectura de Vonn Newmann
+	</h5>
+
+	</h5> 
+		<img src="media/img/img1.png" alt="">
+		<br>
+	<h5>
+	<h5> 
+		La maquina de Turing es una banda lo suficientemente grande donde va a tener simbolos de el alfabeto deseado y un cabezal que va a escribir y leer esta banda <br>
+		La maquina de Turing tiene 5 principales instrucciones las cuales son: <br>
+		q0: Estado inicial o de aceptacion <br>
+		7 : si se encunetra un signo del alfabeto <br>
+		7 : Escribe un signo del alfabeto <br>                                                                                                                     
+		RxL: Transicion izquierda o derecha<br>                                                                                                                                    
+		qn: Transiciona a el estado deseado <br>                                                                                                                                
+	</h5>	
+	</h5> 
+		<img src="media/img/img2.png" alt=""> <br>
+		<img src="media/img/img3.png" alt="">
+	<h5>
+
+	<h5>
+		Ejemplo de codigo o programa:
+	</h5>
+	</h5>
+	<img src="media/img/img4.png" alt="">
+	<br><br>
+	<h5>
+
+	<h3>3.2 Lenguajes <br></h3>
+	<h3 align="center">
+		<br>
+	3.2.1 Modelo computacional (teóricos).<br>
+	</h3>
+
+	<h5>
+		Es un objeto matemático, que nos permite analizar las capacidades, propiedades y límites de la computabilidad <br>
+
+		Existen diferentes modelos. <br>
+		Cada uno de ellos permite resolver diferentes problemas. Se pueden comparar entre ellos para determinar su poder computacional
+
+
+		Ejemplos: <br>
+		Autómatas, finitos, de pila , de dos pilas, celulares <br>
+		Máquina de Turing <br>
+		Oráculo <br>
+	</h5>
+
+	<h3 align="center">
+		<br>
+	3.2.2 Alfabeto y cadenas.<br>
+	</h3>
+	<h5>
+		Alfabeto: <br>
+		Es un conjunto finito y no vacío de símbolos <br>
+		Ejemplos:{0,1} == Binario <br>
+		{a,b,c,d,e,...,z} == Abecedario{0,1,°,+,4} == Inventado <br>
+		Impacto: Lenguaje con el que nos comunicamos con el intérprete. <br>
+
+		Cadena de un alfabeto: <br>
+		100101 es una cadena del alfabeto {0,1} de longitud 6 <br>
+		Cadena vacía o empty string <br>
+	</h5>
+	<h3 align="center">
+		<br>
+	3.2.3 Lenguajes Regulares.<br>
+	</h3>
+	<h5>
+		Un lenguaje es regular, si hay algún autómata finito que lo reconozca. <br>
+		Operadores regulares (resulta en otro lenguaje regular) <br>
+		Sean A,B dos lenguajes regulares. <br>
+		A={auto,avión} ; B={rojo,verde,azul} <br>
+		<br>
+		Unión AuB <br>
+		AuB={auto,avión,rojo,verde,azul} <br>
+		Concatenación AoB <br>
+		AoB={autorojo,avionverde,...,avionazul} <br>
+		Estrella (star) A* <br>
+		A*= { Ø, autoauto,avionauto,avionavionavion…} <br>
+	</h5>
+	<img src="media/img/img5.png" alt="">
+
+	<h3> <br>3.3 Automata finito</h3>
+
+	<h5>
+		Las Máquinas de estado finito o comúnmente se les llama Autómata Finitos,es una abstracción computacional que describe el comportamiento de un sistema reactivo utilizando un número
+		determinado de Estados y transiciones entre ellos, que contiene los siguientes componentes: No terminales, Terminales, Símbolo inicial, conjunto de estados, transiciones, conjunto 
+		de estados de aceptación y se representa con siguiente estructura:
+		<br>
+	</h5>
+	<img src="media/img/img6.png" alt="">
+	<h3 align="center">
+		<br>
+	3.3.1 Automatas determinista y no determinista.<br>
+	</h3>
+	<h5>
+		Los Autómatas Finitos se clasifican de la siguiente manera: <br> <br>
+		Determinista: <br> Para cada combinación de estado y símbolo de entrada, hay una única transición posible. <br> <br>
+		No Determinista: <br> Para una combinación de estado y símbolo de entrada, puede haber múltiples transiciones posibles.
+		<br><br>
+		Aplicaciones: <br>
+		Diseño de Circuitos Digitales. <br>
+		Compiladores y Analizadores Léxicos. <br>
+		Protocolos de Comunicación. <br>
+		Diseño de Interfaces de Usuario. <br>
+		Modelado de Sistemas de Control. <br>
+		Juegos y Simulaciones. <br>
+		Sistemas Embebidos. <br>
+		Procesamiento de Señales. <br><br>
+	</h5>
+	<h3 align="center">
+	Ejemplo 1:<br>
+	</h3>
+
+	<img src="media/img/img7.png" alt="">
+	<h5>
+		En este ejemplo tenemos un autómata Finito No determinista y lo vamos a limpiar para tener su Autómata Finito Determinista, en dónde observamos la disyunción desde una Expresión
+		Regular dada, observamos de igual forma la concatenación, la cerradura positiva y la cerradura estrella. 
+		<br><br>
+	</h5>
+	<h3 align="center">
+	Ejemplo 2:<br>
+	</h3>
+	<img src="media/img/img8.png" alt="">
+	<h5>
+		Ejemplo 2: Una vez obtenido las transiciones válidas, observamos que llegamos al estado 4 y 8 con a y b desde los estados 0, 3, 7, también observamos que el estado inicial es también final, por lo que
+		el estado marcado como final es un estado inaccesible ya que no se puede llegar a él con ningún símbolo válido. En este paso se eliminan las lambdas y solo quedan los símbolos válidos.
+	</h5>
+	<h3 align="center">
+		<br>
+	Ejemplo 3:<br>
+	</h3>
+	<img src="media/img/img9.png" alt="">
+	<h5>
+		Observamos que algunos estados se comportan de manera identica, por lo que al nombrarlos los podemos tratar como el mismo, esto con la intención de eliminar estados vacíos. El 1 se asigna cuando alguno
+		de los estados del renglón son terminales. Una vez nombrando y simplificando los estados obtenemos un Autómata Finito Determinista.
+	</h5>
+	<h3 align="center">
+		<br>
+	Ejemplo 4:<br>
+	</h3>
+	<img src="media/img/img10.png" alt="">
+	<h5>
+	Este es el esquema final de nuestro AFD, dónde existe recursividad al mismo estado con dos símbolos válidos. <br><br>
+	</h5>
+	<!--------------Parciales------------------------>
+	<h3>3.4 Funciones parciales <br></h3>
+
+	<h5>
+		Una función parcial se refiere a una función matemática que no está definida para todos los valores del dominio. Es decir, que solo está definida para un subconjunto específico de valores del dominio.
+		<br>
+		Su contraste, es una función total, que está definida para todos los valores de su dominio <br>
+	</h5>
+	<img src="media/img/img11.png" alt="">
+	<h3 align="center">
+		<br>
+	3.4.1 En la informatica.<br>
+	</h3>
+	<h5>
+		Las funciones parciales en la informática hacen referencia a una función que no tiene un resultado definido con los valores de entrada.
+		De esta manera solo puede devolver un resultado en ciertos casos, y no estar definido para otros; por lo que se pueden generar errores durante la compilación de los códigos teniendo como consecuencia
+		el fallo del sistema; por lo cual se tiene que tener en consideración posibles errores y su correcto manejo <br>
+	</h5>
+	<img src="media/img/img12.png" alt="">
+	<h3 align="center">
+		<br>
+	3.4.2 Dominio restringido.<br>
+	</h3>
+	<h5>
+		Las operaciones parciales operan en un conjunto específico del dominio. <br>
+		Hay que considerar que el dominio no abarca todos los valores posibles, sino sólo los establecidos para dicha función
+	</h5>
+	<img src="media/img/img13.png" alt="">
+	<h3 align="center">
+		<br>
+	3.4.3 Puntos de Exclusión.<br>
+	</h3>
+	<h5>
+		Puede haber puntos en el dominio donde la función no esté definida debido a restricciones matemáticas o lógicas, estas pueden ser resultados fuera del campo de los números reales, no exista validación
+		lógica para ciertas operaciones, entre otros. 
+	</h5>
+	<img src="media/img/img14.png" alt="">
+
+	<h3 align="center">
+		<br>
+	3.4.4 Reglas condicionales.<br>
+	</h3>
+		<h5>Una función parcial, normalmente está expresada bajo una regla específica, la cual dicta bajo qué consideraciones se definirá y cómo se comportará bajo ellas</h5>
+		<img src="media/img/img15.png" alt="">
+	<h3 align="center">
+		<br>
+	3.4.5 Representación gráfica.<br>
+	</h3>
+	<h5>Se usa para mostrar los puntos discontinuos en una función. Esto vuelve visibles las restricciones del dominio en ciertas funciones</h5>
+	<img src="media/img/img16.png" alt="">
+	<h3 align="center">
+		<br>
+	3.4.6 Manejo de excepciones.<br>
+	</h3>
+	<h5>
+		Se abordan situaciones donde la función no está definida y proporciona una respuesta adecuada para manejar errores de manera controlada
+	</h5>
+	<h3 align="center">
+		<br>
+	3.4.7 Continuidad y discontinuidad.<br>
+	</h3>
+	<h5>Una función se considera continua en un punto si cumple con 3 condiciones: <br>
+		El valor en el punto existe <br>
+		El límite cuando se acerca por la izquierda existe <br>
+		El límite cuando se acerca por la derecha existe <br>
+				
+		Además, los límites laterales y el valor en el punto son iguales. <br>
+		Cuando una función es continua para todos los puntos de su dominio, se dice que es continua en todo su dominio <br> <br>
+		<img src="media/img/img17.png" alt=""> <br>
+		La discontinuidad ocurre cuando una función no es continua en algún punto de su dominio, pero existen varios tipos de discontinuidad, tales como:
+		Discontinuidad removible: Ocurre cuando hay un vacío en la gráfica, pero este puede ser cubierto asignando un valor específico a la función en ese punto <br>
+		Discontinuidad de salto:Ocurre cuando la función tiene límites laterales en un punto, pero estos no son iguales entre sí <br>
+		Discontinuidad infinita: Ocurre cuando el límite de la función en un punto es infinito <br>
+		Discontinuidad de asíntota vertical: Ocurre cuando la función tiene una asíntota vertical en algún punto <br>
+		Discontinuidad de asíntota oblicua: Ocurre cuando la función tiene una asíntota horizontal en algún punto <br> <br>
+		<img src="media/img/img18.png" alt=""> <br>
+		</h5>
+	<h3 align="center">
+		<br>
+	3.4.8 Ecuaciones y desigualdades.<br>
+	</h3>
+	<h5>
+		Definición por partes: <br>
+		Se puede definir una función por partes, especificando diferentes expresiones para diferentes intervalos de su dominio <br> <br>
+		<img src="media/img/img19.png" alt=""> <br> <br>
+		Notación de función escalonada <br>
+		La notación escalonada utiliza la función escalón unitario para especificar en que intervalo o conjunto la función toma un valor particular. <br> <br>
+		<img src="media/img/img20.png" alt=""> <br> <br>
+		Desigualdades con funciones partidas
+		Expresa desigualdades en las cuales la función que se está considerando cambiar su comportamiento en distintos intervalos del dominio, lo que implica definir 
+		diferentes expresiones para la función en diferentes subconjuntos del dominio <br> <br>
+		<img src="media/img/img21.png" alt=""> <br> <br>
+		Utilización de funciones por tramos para representar regiones específicas 
+		Implica definir una función diferente de diferentes segmentos específicos de su dominio. Al representar regiones específicas con funciones con tramos se logra
+		una descripción más detallada y precisa de la función en su conjunto <br> <br>
+		<img src="media/img/img22.png" alt=""> <br> <br>
+	</h5>
+	<h3 align="center">
+		<br>
+	3.4.9 Aplicaciones practicas.<br>
+	</h3>
+	<h5>
+		Las funciones parciales se utilizan en varios campos de las matemáticas y la ingeniería para abordar problemas complejos descomponiendolos en partes más manejables.
+		Algunas aplicaciones en diversos campos son: <br>
+
+		Cálculo diferencial e integral <br>
+		-  Descomposición de funciones complejas <br>
+		-  Regla de la cadena <br>
+
+		Algebra lineal
+		-  Descomposición de matrices
+
+		Ecuaciones diferenciales parciales
+		-  Metodo de separacion variable
+
+		Teoría de la probabilidad 
+		-  Función de densidad conjunta
+
+		Programación funcional
+		-  Descomposición de funciones en componentes pequeños
+
+		Control de sistemas dinámicos
+		-  Descomposición de sistemas complejos
+
+		Física teórica
+		-  Expansión en funciones propias
+	</h5>
+	<h3 align="center">
+		<br>
+	3.4.10 Operaciones con funciones parciales.<br>
+	</h3>
+	<h5>
+		1. Identificar las funciones parciales <br>
+		- Cada función parcial está definida para ciertos valores de su dominio <br> <br>
+
+		2. Determinar el dominio de la función resultante <br> 
+		- Identificar el dominio en que la función resulta estar definida. Asegurando que los valores de entrada cumplan con las restricción es parciales originales <br> <br>
+
+		3. Realizar la operación matemática <br>
+		- Dependiendo de la operación que se deba realizar, aplicar la operación a la función parcial correspondiente. Asegurando que estas operaciones están definidas en el dominio que se ha identificado <br> <br>
+		4. Simplificar de ser posible <br>
+		- De ser posible, cancelar términos comunes o factorizar los necesarios <br> <br>
+
+		5. Verificar el dominio de la función resultante <br>
+		- Revisar que la función resultante está definida en el dominio que se identificó inicialmente, tener en cuenta las restricciones <br><br>
+	</h5>
+	<h3 align="center">
+		<br>
+	Ejemplo:<br>
+	</h3>
+	<img src="media/img/img23.png" alt=""> <br> <br>
+	<h3 align="center">
+	<br>
+	Notación y terminología<br>
+	</h3>
+	<h5>
+		Una función parcial se denomina comúnmente como <br> <br>
+		<img src="media/img/img23.png" alt=""> <br> <br>
+		<img src="media/img/img24.png" alt=""> <br> 
+		<img src="media/img/img25.png" alt=""> <br> 
+		<img src="media/img/img26.png" alt=""> <br> <br>
+	</h5>
+	<h3 align="center">
+		<br>
+		Casos especiales<br>
+		</h3>
+		<h5>
+			Discontinuidad <br>
+			Las funciones pueden presentar discontinuidad en los puntos donde están definidas y en los puntos límites del dominio donde la función no está definida <br><br>
+			<img src="media/img/img27.png" alt=""> <br> <br>
+			Funciones definidas por partes <br>
+			Algunas funciones se definen usando utilizando diferentes expresiones en diferentes intervalos <br> <br>
+			<img src="media/img/img28.png" alt=""> <br> <br>
+			Asíntotas <br>
+			La ducciones pueden tener asíntotas en su dominio, estas son líneas que se acercan a medida que la variable de la función se acerca a ciertos valores, pueden ser horizontales o verticales <br> <br>
+			<img src="media/img/img29.png" alt=""> <br> <br>
+			Saltos finitos <br>
+			Algunas funciones pueden tener saltos finitos en lugar de discontinuidades, estos son puntos donde la función experimenta un cambio finito en su valor <br><br>
+			<img src="media/img/img30.png" alt=""> <br> <br>
+			Funciones de valor absoluto <br>
+			En la función asigna a cada número real su valor distancia respecto a cero en la recta numérica <br> <br>
+			<img src="media/img/img31.png" alt=""> <br> <br>
+			Funciones periódicas <br>
+			Algunas funciones se repiten en intervalos regulares
+			<img src="media/img/img32.png" alt=""> <br> <br>
+			Funciones no acotadas <br>
+			Las fusiones no tienen un límite superior o inferior en ciertos intervalos
+			<img src="media/img/img33.png" alt=""> <br> <br>
+			Puntos singulares <br>
+			Es un punto donde la función no es diferenciable
+			<img src="media/img/img34.png" alt=""> <br> <br>
+			Funciones multivalorados <br>
+			Son aquellas que se le asigna más de un valor al mismo elemento del dominio
+			<img src="media/img/img35.png" alt=""> <br> <br>
+		</h5>
+
+
+
+</body>
+</html>
+
+<!--  D:\Java Script\ProyectoFinal\media\img  -->

@@ -1,0 +1,34 @@
+/* 
+En este archivo CSS puedes realizar los ajustes de los contenidos para el archivo html del mismo nombre
+*/
+
+#revisar, #reintentar {
+	display: block;
+	height: 54px;
+	cursor: pointer;
+
+}
+
+#revisar {
+	width: 110px;
+	margin: 20px auto;
+	background: url(../img/cuestionario_revisar.png) no-repeat;
+fy'
+}
+
+#reintentar {
+	width: 132px;
+	margin: 20px auto;
+	background: url(../img/cuestionario_reintentar.png) no-repeat;
+
+}
+
+#puntuacionfinal {
+	display: block;
+	width: 130px;
+	height: 125px;
+	font-size: 1.4em;
+	margin: 20px auto 60px auto;
+
+}
+

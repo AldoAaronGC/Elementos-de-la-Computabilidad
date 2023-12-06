@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es" style="">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="Author" content="Equipo 4"><!--Autor-->
+	<link rel="stylesheet" href="media/css/ui.css" type="text/css">
+	<link rel="stylesheet" href="media/css/software.css" type="text/css">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+</head>
+
+<body>
+    <div class="menu-container">
+        <h1>Bienvenido</h1>
+        <p>Elige una de las siguientes opciones:</p>
+        <ul id="menu">
+            <li onclick="seleccionarOpcion('Automata')">Automata deterministico</li>
+            <li onclick="seleccionarOpcion('Lenguajes')">Operador de Lenguajes</li>
+            <li onclick="seleccionarOpcion('FuncionesParciales')">Funciones parciales</li>
+        </ul>
+    </div>
+
+    <div id="ProbabilidadDiscreta" class="oculto">
+        <!-- Contenido de Probabilidad Binomial -->
+        <div class="container">
+            <h1>Calculadora de Probabilidad Binomial</h1>
+            <label for="numEnsayos">Número total de ensayos (n):</label>
+            <input type="number" id="numEnsayos" min="1">
+            <br>
+            <label for="numExitos">Número de éxitos deseados (x):</label>
+            <input type="number" id="numExitos" min="0">
+            <br>
+            <label for="probExito">Probabilidad de éxito en un solo ensayo (p):</label>
+            <input type="number" id="probExito" min="0" max="1" step="0.01">
+            <br>
+            <button onclick="calcularProbabilidadBinomial()">Calcular Probabilidad</button>
+            <button onclick="reiniciar()">Reiniciar</button>
+            <div id="output"></div>
+        </div>
+    </div>
+
+
+    <div id="Automata" class="oculto">
+        <div class="aut">
+            <h1>Validador de Cadenas {0,1}</h1>
+            <label for="LengA">Ingrese una cadena para verificar si solo contiene números en el alfabeto {0,1}:</label>
+            <input type="text" id="LengA">
+            <br>
+            <button onclick="verificarCadena()">Verificar cadena</button>
+            <button onclick="reinicioAutomata()">Reiniciar</button>
+            <div id="resultadoAutomata"></div>
+        </div>
+    </div>
+
+    <div id="Lenguajes" class="oculto">
+        <div class="Lenguaje">
+            <h1>Operador de 2 Lenguajes</h1>
+            <label for="LenguajeA">Ingrese su primer lenguaje:</label>
+            <input type="text" id="LenguajeA">
+            <br>
+            <label for="LenguajeB">Ingrese su segundo lenguaje:</label>
+            <input type="text" id="LenguajeB">
+            <br>
+            <button onclick="operarLenguajes()">Operar</button>
+            <button onclick="reinicioLenguaje()">Reiniciar</button>
+            <div id="resultadoLenguaje"></div>
+        </div>
+    </div>
+
+    <div id="FuncionesParciales" class="oculto">
+        <div class="Parciales">
+            <h1>Evaluación de Funciones Parciales</h1>
+            <label for="Funcion">Ingrese su función parcial (use 'x' como variable):</label>
+            <input type="text" id="Funcion">
+            <br>
+            <label for="Inicio">Inicio del rango:</label>
+            <input type="number" id="Inicio">
+            <br>
+            <label for="Fin">Fin del rango:</label>
+            <input type="number" id="Fin">
+            <br>
+            <button onclick="evaluarFuncion()">Evaluar Función</button>
+            <button onclick="limpiar()">Limpiar</button>
+            <div id="resultados"></div>
+        </div>
+    </div>
+
+    
+    <script src="media/js/m.js"></script>
+    <script src="media/js/ui.js"></script>
+    <script src="media/js/software.js"></script>
+
+
+</body>
+</html>
